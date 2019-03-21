@@ -137,49 +137,6 @@
 </article>
 
   
-    <article id="post-静态工厂方法模式" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/21/静态工厂方法模式/">静态工厂方法模式</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2019/03/21/静态工厂方法模式/" class="article-date">
-  <time datetime="2019-03-21T06:03:32.000Z" itemprop="datePublished">2019-03-21</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/java/">java</a>
-  </div>
-
-    
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/设计模式/">设计模式</a></li></ul>
-
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-doorframe" itemprop="articleBody">
-      
-        <h2 id="静态工厂方法模式"><a href="#静态工厂方法模式" class="headerlink" title="静态工厂方法模式"></a>静态工厂方法模式</h2><div class="highlight-box" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public class SendFactory &#123;  </span><br><span class="line">      </span><br><span class="line">    public static Sender <span class="function"><span class="title">produceMail</span></span>()&#123;  </span><br><span class="line">        <span class="built_in">return</span> new MailSender();  </span><br><span class="line">    &#125;  </span><br><span class="line">      </span><br><span class="line">    public static Sender <span class="function"><span class="title">produceSms</span></span>()&#123;  </span><br><span class="line">        <span class="built_in">return</span> new SmsSender();  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">public class FactoryTest &#123;  </span><br><span class="line">  </span><br><span class="line">    public static void main(String[] args) &#123;      </span><br><span class="line">        Sender sender = SendFactory.produceMail();  </span><br><span class="line">        sender.Send();  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<p>工厂模式适合：凡是出现了大量的产品需要创建，并且具有共同的接口时，可以通过工厂方法模式进行创建。</p>
-
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
     <article id="post-单例设计模式" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
     <header class="article-header">
@@ -344,10 +301,6 @@
         
           <li>
             <a href="/2019/03/21/摸鱼/">摸鱼</a>
-          </li>
-        
-          <li>
-            <a href="/2019/03/21/静态工厂方法模式/">静态工厂方法模式</a>
           </li>
         
           <li>
